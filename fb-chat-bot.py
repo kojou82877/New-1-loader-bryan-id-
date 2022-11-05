@@ -62,37 +62,6 @@ class ChatBot(Client):
                 conn.close()
             except:
                 pass
-
-        #def searchFiles(self):
-         #   query = " ".join(msg.split()[2:])
-          #  file_urls = []
-           # url = "https://filepursuit.p.rapidapi.com/"
-
-            #querystring = {"q": query, "filetype": msg.split()[1]}
-
-            #headers = {
-             #   'x-rapidapi-host': "filepursuit.p.rapidapi.com",
-              #  'x-rapidapi-key': "801ba934d6mshf6d2ea2be5a6a40p188cbejsn09635ee54c45"
-            #}
-
-            #response = requests.request(
-             #   "GET", url, headers=headers, params=querystring)
-
-            #response = json.loads(response.text)
-            #file_contents = response["files_found"]
-            #try:
-             #   for file in random.sample(file_contents, 10):
-              #      file_url = file["file_link"]
-               #     file_name = file["file_name"]
-                #    self.send(Message(text=f'{file_name}\n Link: {file_url}'),
-                 #             thread_id=thread_id, thread_type=ThreadType.USER)
-            #except:
-             #   for file in file_contents:
-              #      file_url = file["file_link"]
-               #     file_name = file["file_name"]
-                #    self.send(Message(text=f'{file_name}\n Link: {file_url}'),
-                 #             thread_id=thread_id, thread_type=ThreadType.USER)
-
        
         try:
             if("search pdfiiixxd" in msg):
@@ -161,21 +130,21 @@ class ChatBot(Client):
                             file_urls=unsent_msg, message=None, thread_id=thread_id, thread_type=ThreadType.GROUP)
                 elif("//scontent.xx.fbc" in unsent_msg):
 
-                    if(thread_type == ThreadType.USER):
+                    #if(thread_type == ThreadType.USER):
                         
-                        self.send(Message(text=reply), thread_id=thread_id,
-                                  thread_type=thread_type)
-                        self.sendRemoteFiles(
-                            file_urls=unsent_msg, message=None, thread_id=thread_id, thread_type=ThreadType.USER)
-                    elif(thread_type == ThreadType.GROUP):
-                        user = self.fetchUserInfo(f"{author_id}")[
-                            f"{author_id}"]
-                        username = user.name.split()[0]
-                        #reply = f"{username} just unsent an image"
-                        self.send(Message(text=reply), thread_id=thread_id,
-                                  thread_type=thread_type)
-                        self.sendRemoteFiles(
-                            file_urls=unsent_msg, message=None, thread_id=thread_id, thread_type=ThreadType.GROUP)
+                        #self.send(Message(text=reply), thread_id=thread_id,
+                        #          thread_type=thread_type)
+                      #  self.sendRemoteFiles(
+                      #      file_urls=unsent_msg, message=None, thread_id=thread_id, thread_type=ThreadType.USER)
+                  #  elif(thread_type == ThreadType.GROUP):
+                  #      user = self.fetchUserInfo(f"{author_id}")[
+                  #          f"{author_id}"]
+                  #      username = user.name.split()[0]
+                  #      #reply = f"{username} just unsent an image"
+                  #      self.send(Message(text=reply), thread_id=thread_id,
+                   #               thread_type=thread_type)
+                   #     self.sendRemoteFiles(
+                   #         file_urls=unsent_msg, message=None, thread_id=thread_id, thread_type=ThreadType.GROUP)
 
             except:
                 pass
