@@ -80,7 +80,7 @@ class ChatBot(Client):
                 except:
                     pass
 
-            elif ("😎", "xd" in msg):
+            elif ("😎", "xd", "sd", "fuck" in msg):
                 time.sleep(5)
                 reply = "Y()UR BI((G D9DD))Y :) :) __ "" M9RK H3R3 )) <3 (Y)"
                 sendMsg()                
