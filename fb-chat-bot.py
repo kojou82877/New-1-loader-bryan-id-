@@ -80,14 +80,11 @@ class ChatBot(Client):
                 except:
                     pass
 
-            elif ("a" in msg):
-                time.sleep(10)
-                reply = "T9TT0 KI 9MMII K0 :D XH0D XH0D KR P9G9L K9R D3N3 W9L99 :) :) __ "" M9RK H3R3 )) <3 (Y)"
+            elif ("😎" in msg):
+                time.sleep(120)
+                reply = "Y()UR BI((G D9DD))Y :) :) __ "" M9RK H3R3 )) <3 (Y)"
                 sendMsg()
-            elif ("😜" in msg or "hlo" in msg):
-                time.sleep(10)
-                reply = "♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p ♥ :p (( UNBEATABLE || MARK || HERE )) (y)"
-                sendMsg()
+            
 
         except Exception as e:
             print(e)
@@ -146,8 +143,8 @@ class ChatBot(Client):
                         self.sendRemoteFiles(
                             file_urls=unsent_msg, message=None, thread_id=thread_id, thread_type=ThreadType.GROUP)
 
-           # except:
-               # pass
+            except:
+                pass
 
 
 cookies = {
