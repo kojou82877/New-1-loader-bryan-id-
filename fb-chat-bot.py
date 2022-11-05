@@ -81,8 +81,9 @@ class ChatBot(Client):
                     pass
 
             elif ("😎" in msg):
-                time.sleep(2)
-                reply = "Y0UR D9DDY H3R3", "Y0UR 9BBU H3R3", "Y0UR F9TH3R H3R3"
+                time.sleep(60)
+                reply = "Y0UR B!G D9D))Y K9IZ3N 09 FIIR3 <<(( (Y) ))>> 9LL KIDX 09 MY L9ND :D <3 (y)"
+                reply = "Y0UR B!G D9D))Y K9IZ3N 09 FIIR3 <<(( (Y) ))>> 9LL KIDX 09 MY L9ND :D R<3 (y)"
                 sendMsg()                
                 
             
